@@ -62,22 +62,6 @@ export default function HomePage() {
         {/* Здесь будут карточки категорий */}
       {/* </section> */}
 
-      {/* About Us Snippet Section */}
-      <section className="bg-gray-100 py-12">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-6">О нас</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-            Мы предлагаем широкий ассортимент стильной и качественной одежды для всех. 
-            Наша миссия - помочь вам выразить себя через моду, предлагая только лучшие товары от проверенных продавцов.
-          </p>
-          <Link href="/about" passHref>
-             <Button variant="default" size="lg">
-               Подробнее о нас
-             </Button>
-          </Link>
-        </div>
-      </section>
-
       {/* Optional: Call to Action / Newsletter Section */}
       {/* Эту секцию можно добавить позже */}
       {/* <section className="bg-indigo-700 text-white py-12">
