@@ -134,7 +134,7 @@ export default function ProductCard({
               >
                 <button
                   onClick={addToCartHandler}
-                  className="bg-card hover:bg-muted text-foreground p-2 rounded-full shadow-lg transform hover:scale-110 transition-all duration-200"
+                  className="bg-white hover:bg-gray-100 text-gray-800 p-2 rounded-full shadow-lg transform hover:scale-110 transition-all duration-200"
                   aria-label="Добавить в корзину"
                 >
                   <ShoppingCart className="w-5 h-5" />
@@ -157,7 +157,7 @@ export default function ProductCard({
                 </div>
               )}
               {Array.isArray(colors) && colors.length > 0 && (
-                <div className="text-xs bg-muted text-muted-foreground px-2 py-1 rounded">
+                <div className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">
                   {colors[0]}
                   {colors.length > 1 && ` +${colors.length - 1}`}
                 </div>
