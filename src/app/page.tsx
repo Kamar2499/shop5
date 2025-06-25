@@ -28,20 +28,30 @@ export default function HomePage() {
             Откройте для себя последние коллекции и найдите свой уникальный стиль.
           </p>
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className="mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8"
           >
-            More about our collections...
-          </motion.div>
-          <div>
             <Link href="/catalog" passHref>
-              <Button variant="default" size="lg">
-                Перейти в каталог
+              <Button 
+                variant="default" 
+                size="lg"
+                className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
+              >
+                🛍️ Перейти в каталог
               </Button>
             </Link>
-          </div>
+            <Link href="/about" passHref>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
+              >
+                ✨ Узнать больше
+              </Button>
+            </Link>
+          </motion.div>
         </div>
       </section>
 
