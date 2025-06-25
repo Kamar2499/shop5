@@ -27,12 +27,14 @@ export default function HomePage() {
           >
             Откройте для себя последние коллекции и найдите свой уникальный стиль.
           </p>
-          motion.div
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             className="mt-8"
-          More about our collections... /motion.div>
+          >
+            More about our collections...
+          </motion.div>
           <div>
             <Link href="/catalog" passHref>
               <Button variant="default" size="lg">
