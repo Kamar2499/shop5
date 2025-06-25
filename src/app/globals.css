@@ -4,7 +4,8 @@
 
 html,
 body {
-  background: white !important;
+  background: var(--background);
+  color: var(--foreground);
   background-image: none !important;
   opacity: 1 !important;
   filter: none !important;

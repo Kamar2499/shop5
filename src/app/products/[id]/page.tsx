@@ -151,12 +151,16 @@ export default function ProductDetailsPage() {
           {/* Size selection */}
           {product.sizes && product.sizes.length > 0 && (
             <div className="mb-4">
-              <h3 className="text-md font-semibold mb-2">Размер:</h3>
+              <h3 className="text-md font-semibold mb-2 text-foreground">Размер:</h3>
               <div className="flex gap-2 flex-wrap">
                 {product.sizes.map(size => (
                   <Button
                     key={size}
-                    variant={selectedSize === size ? "default" : "outline"}
+                    variant={selectedSize === size ? "solid-visible" : "outline"}
+                    className={selectedSize === size 
+                      ? "bg-blue-600 text-white border-blue-600 hover:bg-blue-700" 
+                      : "border-gray-300 text-foreground hover:bg-gray-100"
+                    }
                     onClick={() => setSelectedSize(size)}
                   >
                     {size}
@@ -169,12 +173,16 @@ export default function ProductDetailsPage() {
           {/* Color selection */}
           {product.colors && product.colors.length > 0 && (
             <div className="mb-4">
-              <h3 className="text-md font-semibold mb-2">Цвет:</h3>
+              <h3 className="text-md font-semibold mb-2 text-foreground">Цвет:</h3>
               <div className="flex gap-2 flex-wrap">
                 {product.colors.map(color => (
                   <Button
                     key={color}
-                    variant={selectedColor === color ? "default" : "outline"}
+                    variant={selectedColor === color ? "solid-visible" : "outline"}
+                    className={selectedColor === color 
+                      ? "bg-blue-600 text-white border-blue-600 hover:bg-blue-700" 
+                      : "border-gray-300 text-foreground hover:bg-gray-100"
+                    }
                     onClick={() => setSelectedColor(color)}
                   >
                     {color}
