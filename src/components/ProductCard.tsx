@@ -146,12 +146,12 @@ export default function ProductCard({
 
         <div className="p-4 flex-1 flex flex-col">
           <div className="flex-1">
-            <h3 className="font-semibold text-foreground text-lg line-clamp-2 mb-1">{name}</h3>
-            <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{description}</p>
+            <h3 className="font-semibold text-gray-900 text-lg line-clamp-2 mb-1">{name}</h3>
+            <p className="text-sm text-gray-600 mb-3 line-clamp-2">{description}</p>
             
             <div className="flex flex-wrap gap-2 mb-3">
               {Array.isArray(size) && size.length > 0 && (
-                <div className="text-xs bg-muted text-muted-foreground px-2 py-1 rounded">
+                <div className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">
                   {size[0]}
                   {size.length > 1 && ` +${size.length - 1}`}
                 </div>
@@ -165,7 +165,7 @@ export default function ProductCard({
             </div>
 
             <div className="mt-auto">
-              <p className="text-xl font-bold text-foreground">{formatPrice(price)}</p>
+              <p className="text-xl font-bold text-gray-900">{formatPrice(price)}</p>
             </div>
           </div>
         </div>

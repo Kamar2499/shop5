@@ -12,7 +12,7 @@ body {
 
 :root {
   --background: 0 0% 100%; /* White */
-  --foreground: 222.2 47.4% 11.2%; /* Black */
+  --foreground: 0 0% 15%; /* Темно-серый для лучшей читаемости */
 
   --card: 0 0% 100%; /* White */
   --card-foreground: 222.2 47.4% 11.2%; /* Black */
@@ -27,7 +27,7 @@ body {
   --secondary-foreground: 222.2 47.4% 11.2%;
 
   --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
+  --muted-foreground: 0 0% 40%; /* Более темный серый для лучшей читаемости */
 
   --accent: 210 40% 96.1%;
   --accent-foreground: 222.2 47.4% 11.2%;

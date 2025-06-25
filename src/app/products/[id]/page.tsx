@@ -135,18 +135,18 @@ export default function ProductDetailsPage() {
             </div>
           ) : (
             <div className="w-full h-96 bg-gray-200 flex items-center justify-center rounded-lg shadow-sm">
-              <span className="text-muted-foreground">Нет изображения</span>
+              <span className="text-gray-500">Нет изображения</span>
             </div>
           )}
           {/* Add image gallery here if needed */}
         </div>
 
         <div className="w-full md:w-1/2">
-          <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
-          <p className="text-primary text-xl mb-4">{product.price} ₽</p>
-          <p className="text-foreground mb-4">{product.description}</p>
-          <p className="text-sm text-muted-foreground mb-2">Категория: {product.category}</p>
-          <p className="text-sm text-muted-foreground mb-4">Продавец: {product.seller.name}</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">{product.name}</h1>
+          <p className="text-blue-600 text-xl mb-4">{product.price} ₽</p>
+          <p className="text-gray-700 mb-4">{product.description}</p>
+          <p className="text-sm text-gray-600 mb-2">Категория: {product.category}</p>
+          <p className="text-sm text-gray-600 mb-4">Продавец: {product.seller.name}</p>
 
           {/* Size selection */}
           {product.sizes && product.sizes.length > 0 && (
@@ -184,7 +184,7 @@ export default function ProductDetailsPage() {
             </div>
           )}
 
-          <p className="text-sm text-muted-foreground mb-4">В наличии: {product.stock}</p>
+          <p className="text-sm text-gray-600 mb-4">В наличии: {product.stock}</p>
 
 <Button className="w-full md:w-auto" onClick={() => {
             if (!selectedSize || !selectedColor) {

@@ -6,7 +6,7 @@ export default function Navigation() {
     <nav className="bg-white shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-xl font-bold">
+          <Link href="/" className="text-xl font-bold text-gray-900">
             Магазин одежды
           </Link>
           
